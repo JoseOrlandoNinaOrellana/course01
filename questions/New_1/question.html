@@ -1,16 +1,21 @@
 <pl-question-panel>
-  <p>Realizar una función que reciba dos parámetros:</p>
-        <p>1) por referencia constante un vector de enteros.</p>
-        <p>2) un entero (pivote).</p>
-    <p>y devuelva un entero indicando cuantos de los elementos del vector son mayores que el pivote.</p>
-    <p>En el programa principal se leerán los datos de un fichero de texto que contendrá un entero por
-línea. El nombre de este fichero se pasará como primer argumento al invocar el programa. El
-segundo argumento será el valor del pivote, si no está disponible, el pivote valdrá 11.</p>
-    <p>Tras invocar a la función, se mostrará, por salida estándar en dos líneas:</p>
-        <p>1. 'Pivote: ' seguido del valor considerado para el pivote.</p>
-        <p>2. 'Resultado: ' seguido del valor devuelto por la función.</p>
-    <p>En caso de producirse algún error, el programa deberá devolver un código de error distinto de 0.</p>
-    <p>Ficheros de datos: datosEnteros1.dat datosInt2.dat datosInteg3.dat</p>
+  <p>Write a function that takes two parameters:</p>
+        <p>1) A constant reference to a vector of integers.</p>
+        <p>2) An integer (pivot).</p>
+    <p>and returns an integer indicating how many of the vector's elements are greater than the pivot.</p>
+    <p>In the main program, data will be read from a text file containing one integer per line. The name of this file will be passed as the first argument when invoking the program. The second argument will be the value of the pivot; if it is not available, the pivot will default to 11.</p>
+    <p>After calling the function, two lines will be displayed on the standard output:</p>
+        <p>1. 'Pivot: ' followed by the considered value for the pivot.</p>
+        <p>2. 'Result: ' followed by the value returned by the function.</p>
+    <p>In case of any error, the program must return a non-zero error code.</p>
+    <p>Data files: dataInt1.dat dataInt2.dat dataInt3.dat</p>
 </pl-question-panel>
 
-<pl-integer-input answers-name="c" label="$c=$"></pl-integer-input>
+<pl-file-editor file-name="start.cpp" source-file-name="start.cpp"
+		ace-mode="ace/mode/c_cpp">
+</pl-file-editor>
+
+<pl-submission-panel>
+  <pl-external-grader-results></pl-external-grader-results>
+  <pl-file-preview></pl-file-preview>
+</pl-submission-panel>
