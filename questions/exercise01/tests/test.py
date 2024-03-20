@@ -12,7 +12,7 @@ class QuestionGrader(cgrader.CPPGrader):
             flags="-lgtest -lgtest_main -pthread",
             pkg_config_flags="check",
         )
-        self.run_check_suite("./main", use_iteration=True)
+        self.test_run("./main",exp_output="[  PASSED  ] 2 tests." , must_match_all_outputs=True)
 
 
 g = QuestionGrader()
